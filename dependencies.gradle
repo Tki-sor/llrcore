@@ -27,7 +27,7 @@ dependencies {
 
 //    modImplementation("curse.maven:item-split-bug-fix-1119284:5806246")
     modImplementation("maven.modrinth:every-x-hotpot:2.0.0-pre1-1.20.1-TeaCon2023")
-    jarJar(modImplementation("dev:gtceu-1.20.1:7.0.1"))
+    modImplementation("dev:gtceu-1.20.1:7.0.1")
     modImplementation("com.lowdragmc.ldlib:ldlib-forge-1.20.1:1.0.40.b") { transitive = false }
     modImplementation("curse.maven:inventory-hud-forge-357540:5639966")
     modImplementation("curse.maven:ex-deorum-901420:6614784")

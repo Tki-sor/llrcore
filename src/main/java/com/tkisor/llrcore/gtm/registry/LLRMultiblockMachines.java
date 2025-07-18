@@ -488,7 +488,10 @@ public class LLRMultiblockMachines {
                     .where(" ", Predicates.any())
                     .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                     .build())
-            .defaultModel()
+            .workableCasingModel(
+                    GTCEu.id("block/casings/solid/machine_casing_clean_stainless_steel"),
+                    GTCEu.id("block/multiblock/fusion_reactor")
+            )
             .register();
 
     public static final MultiblockMachineDefinition steam_blast_furnace = LLR.multiblock("steam_blast_furnace", SteamMultiblockMachine::new)

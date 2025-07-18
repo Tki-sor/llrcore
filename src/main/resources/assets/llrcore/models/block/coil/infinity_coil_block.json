@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "llrcore:block/casings/coils/infinity_coil_block"
+    }
+}

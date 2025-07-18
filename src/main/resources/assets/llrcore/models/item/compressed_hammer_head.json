@@ -1,0 +1,7 @@
+{
+  "loader": "tconstruct:material",
+  "parent": "forge:item/default",
+  "textures": {
+    "texture": "llrcore:item/tool/parts/compressed_hammer_head"
+  }
+}

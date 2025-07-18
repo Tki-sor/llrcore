@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:table_casting_material",
+  "cast": {
+    "tag": "llrcore:casts/single_use/compressed_hammer_head"
+  },
+  "cast_consumed": true,
+  "item_cost": 8,
+  "result": "llrcore:compressed_hammer_head"
+}

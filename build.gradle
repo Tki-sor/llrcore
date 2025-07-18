@@ -1,0 +1,39 @@
+plugins {
+    id 'idea'
+    id 'java-library'
+    id 'maven-publish'
+    alias libs.plugins.modDevGradleLegacy
+    alias libs.plugins.kotlin.jvm
+    alias libs.plugins.kotlin.plugin
+}
+
+version = mod_version
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+apply from: "$rootDir/gradle/scripts/moddevgradle.gradle"
+apply from: "$rootDir/gradle/scripts/repositories.gradle"
+apply from: "$rootDir/dependencies.gradle"
+apply from: "$rootDir/gradle/scripts/resources.gradle"
+apply from: "$rootDir/gradle/scripts/jars.gradle"
+
+generateModMetadata.doFirst {
+    mkdir('run/server')
+    mkdir('run/data')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.compilerArgs << "-Xlint:-deprecation" << "-Xlint:-removal"
+}
+
+jar {
+    exclude "**/.cache"
+    exclude "**/SimplifiedToTraditional.properties"
+}
+
+java {
+    withSourcesJar()
+}

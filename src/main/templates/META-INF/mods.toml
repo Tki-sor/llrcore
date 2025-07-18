@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "${mod_license}"
+
+[[mods]]
+modId = "llrcore"
+version = "${version}"
+displayName = "LLR Core"
+authors = "Tki_sor"
+description='''${mod_description}'''
+#logoFile = ""
+
+[[dependencies.llrcore]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.llrcore]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.llrcore]]
+modId = "gtceu"
+mandatory = false
+versionRange = "[1,)"
+ordering = "BEFORE"
+side = "BOTH"

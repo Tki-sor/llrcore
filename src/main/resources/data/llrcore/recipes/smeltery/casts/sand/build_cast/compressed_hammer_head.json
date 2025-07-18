@@ -1,0 +1,8 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "tconstruct:compressed_hammer_head",
+  "pattern_item": {
+    "tag": "tconstruct:casts/sand"
+  },
+  "result": "llrcore:compressed_hammer_head_sand_cast"
+}

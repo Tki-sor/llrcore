@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:part_builder",
+  "cost": 32,
+  "pattern": "llrcore:compressed_hammer_head",
+  "pattern_item": [
+    {
+      "tag": "tconstruct:patterns/default"
+    },
+    {
+      "item": "llrcore:compressed_hammer_head_cast"
+    }
+  ],
+  "result": {
+    "item": "llrcore:compressed_hammer_head"
+  }
+}

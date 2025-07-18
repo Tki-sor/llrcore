@@ -1,0 +1,26 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head": "llrcore:item/tool/parts/compressed_hammer_head",
+    "handle": "tconstruct:item/tool/sledge_hammer/handle_bone"
+  },
+  "parts": [
+    {
+      "name": "handle",
+      "index": 1
+    },
+    {
+      "name": "head",
+      "index": 0
+    }
+  ],
+  "overrides": [
+    {
+      "predicate": {
+        "tconstruct:broken": 1
+      },
+      "model": "llrcore:item/hammer_exn/broken"
+    }
+  ]
+}

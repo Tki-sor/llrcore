@@ -1,0 +1,41 @@
+dependencies {
+    compileOnly libs.jetbrains.annotations
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    api(annotationProcessor("io.github.llamalad7:mixinextras-common:$project.mixinextras_version"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.0-rc.3"))
+    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
+
+//    modImplementation("curse.maven:ldlib-626676:6745019")
+
+    modImplementation("com.tterrag.registrate:Registrate:$project.registrate_version")
+
+    modImplementation("appeng:appliedenergistics2-forge:${project.ae2_version}") { transitive false }
+    modImplementation("org.appliedenergistics:guideme:20.1.7")
+
+    modCompileOnly("mezz.jei:jei-$project.minecraft_version-forge-api:$project.jei_version") { transitive false }
+    modCompileOnly("mezz.jei:jei-$project.minecraft_version-common-api:$project.jei_version") { transitive false }
+    modCompileOnly("mezz.jei:jei-$project.minecraft_version-forge:$project.jei_version") { transitive false }
+
+    modImplementation("dev.emi:emi-forge:${project.emi_version}")
+
+    modImplementation("curse.maven:deeperdarker-659011:5906086")
+
+    modImplementation("curse.maven:EnderIO-64578:5780352")
+
+//    modImplementation("curse.maven:item-split-bug-fix-1119284:5806246")
+    modImplementation("maven.modrinth:every-x-hotpot:2.0.0-pre1-1.20.1-TeaCon2023")
+    modImplementation("com.gregtechceu.gtceu:gtceu-1.20.1:7.0.0")
+    modImplementation("com.lowdragmc.ldlib:ldlib-forge-1.20.1:1.0.40.b") { transitive = false }
+    modImplementation("curse.maven:inventory-hud-forge-357540:5639966")
+    modImplementation("curse.maven:ex-deorum-901420:6614784")
+    modImplementation("com.github.thedarkcolour:ModKit:78f393bfac")
+    modImplementation("slimeknights.tconstruct:TConstruct:1.20.1-3.10.1.76")
+    modImplementation("slimeknights.mantle:Mantle:1.20.1-1.11.63")
+    modImplementation("dev.architectury:architectury-forge:9.2.14")
+    modImplementation("dev.latvian.mods:kubejs-forge:2001.6.5-build.16")
+    modImplementation("dev.latvian.mods:rhino-forge:2001.2.3-build.6")
+
+}
